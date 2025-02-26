@@ -1,0 +1,35 @@
+site_name: My Docs
+site_name: My Notes
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+nav:  
+  - CICD:
+      - Overview: CICD/index.md
+      - GitHub Actions: CICD/GitHubActions.md
+      - Jenkins: CICD/Jenkins.md
+  - Kubernetes:
+      - Overview: Kubernetes/index.md
+      - Helm: Kubernetes/Helm.md
+      - Operators: Kubernetes/Operators.md
+  - Terraform:
+      - Overview: Terraform/index.md
+      - Modules: Terraform/Modules.md
+      - State Management: Terraform/StateManagement.md
+
+# Enable GitHub Pages Deployment
+site_url: "https://madviv001.github.io/my-notes/"
+
+# GitHub Repository Link
+repo_url: "https://github.com/madviv001/my-notes"
+repo_name: "madviv001/my-notes"
+
+# Exclude the 'site' directory from version control
+exclude_dirs:
+  - site
