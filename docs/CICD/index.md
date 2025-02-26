@@ -2,4 +2,4 @@
 
 Here is an overview of CI/CD:
 
-![CI/CD Workflow](images/untitled.png)
+![CI/CD Workflow](image/untitled.png)
