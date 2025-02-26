@@ -1,35 +1,65 @@
-site_name: My Docs
 site_name: My Notes
+site_url: "https://madviv001.github.io/my-notes/"
+
+# Theme Configuration
 theme:
   name: material
+  palette:
+    - scheme: slate  # Dark mode (Use 'default' for light mode)
+      primary: blue
+      accent: amber
+  font:
+    text: Montserrat
+    code: Fira Code
+  logo: https://cdn.prod.website-files.com/65cb70dea86ef31d62e7ad25/65dc9790d4751d8962ffda75_5c7035952c838c25751b68bb_unnamed_46853dab4c0e6bce09498965de004ed1_1000.png
+  favicon: assets/images/my-favicon.ico
   features:
     - navigation.tabs
     - navigation.instant
-    - toc.integrate
+    - navigation.expand
+    - navigation.sections
     - search.suggest
     - search.highlight
+    - toc.integrate
+    - content.tooltips
+    - content.code.annotate
+    - content.code.copy
 
-nav:  
-  - CICD:
-      - Overview: CICD/index.md
+# Navigation Structure
+nav:
+  - CI/CD:
+      - GitOps: CICD/index.md
       - GitHub Actions: CICD/GitHubActions.md
       - Jenkins: CICD/Jenkins.md
   - Kubernetes:
-      - Overview: Kubernetes/index.md
+      - GitOps: Kubernetes/index.md
       - Helm: Kubernetes/Helm.md
       - Operators: Kubernetes/Operators.md
   - Terraform:
-      - Overview: Terraform/index.md
+      - GitOps: Terraform/index.md
       - Modules: Terraform/Modules.md
       - State Management: Terraform/StateManagement.md
+  - About: about.md
 
-# Enable GitHub Pages Deployment
-site_url: "https://madviv001.github.io/my-notes/"
-
-# GitHub Repository Link
+# Repository Information
 repo_url: "https://github.com/madviv001/my-notes"
 repo_name: "madviv001/my-notes"
+edit_uri: "blob/main/docs/"
 
-# Exclude the 'site' directory from version control
+# Custom Styles & Scripts
+extra_css:
+  - assets/stylesheets/custom.css
+extra_javascript:
+  - assets/scripts/custom.js
+
+# Plugins (Ensure they are installed)
+plugins:
+  - search
+  - macros
+  - git-revision-date-localized
+
+# Exclude unnecessary directories (Fix warning)
 exclude_dirs:
-  - site
+  - venv
+  - .github
+  - node_modules
