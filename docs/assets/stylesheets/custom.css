@@ -1,0 +1,33 @@
+/ Gawing mas malaki ang title /
+.md-header__title {
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+/ I-center ang hero section /
+.md-content {
+    text-align: left !important;
+}
+
+/ Pagandahin ang buttons /
+.md-button {
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/ Custom styling sa sidebar /
+.md-sidebar {
+    background: transparent !important; / Ginawang transparent para mawala ang puting box /
+}
+
+/ Baguhin ang kulay ng active na tab /
+.md-tabs__link--active {
+    color: #ff4081 !important;
+    font-weight: bold;
+}
+
+/ I-customize ang dark mode toggle /
+.md-toggle {
+    background: #3f51b5 !important;
+}
